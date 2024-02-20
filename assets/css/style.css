@@ -1,18 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Inicio Clase utilitarias */
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.btn-primary {
+    background-color: darkblue;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(139, 0, 137);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+/* Fin Clase utilitarias */
+
+/* Card */
+
+.card-container {
+    height: 100vh;
+    background-color: rgba(0, 119, 83, 0.169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     background-color: gray;
-    width: 500px;
+    width: 510px;
     overflow: hidden;
     border-radius: 1rem;
+    /* box-sizing: border-box; */
 }
 
 .card img {
     width: 100%;
     height: 100px;
     object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem 2rem;
+}
+
+.card-body h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.card-icon {
+    background-color: rgba(255, 255, 255, 0.694);
+    /* display: inline-block; */
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-icon i {
+    color: rgb(164, 0, 213);
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ejemplo media queries */
+
+.bg-success {
+    background-color: #008a33;
+}
+
+/* .bg-md-primary {
+    background-color: #1a0061;
+} */
+
+@media (min-width: 768px) {
+    .bg-md-primary {
+        background-color: #1a0061;
+    }
+
+    /* .bg-success {
+        background-color: #ac00f0;
+    } */
 }
